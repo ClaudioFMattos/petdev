@@ -13,7 +13,7 @@ import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
 const services = [
   {
-    title: "Banho & Tosa",
+    title: "Banho e Tosa",
     description:
       "Inclui banho com produtos específicos para o tipo de pelagem e pele do animal, corte de unhas, limpeza das orelhas e tosa personalizada (higiênica ou estilizada).",
     duration: "1h",
@@ -75,7 +75,7 @@ export function Services() {
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="text-4xl font-bold mb-12">Serviços</h2>
+          <h2 className="text-4xl font-bold mb-12" data-aos="fade-up-right">Serviços</h2>
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex ">
@@ -106,7 +106,8 @@ export function Services() {
                         </div>
 
                         <a
-                          href="#"
+                          href={`https://wa.me/54996615894?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
+                          target="_blank"
                           className="flex items-center justify-center gap-2 hover:bg-red-500 rounded-xl duration-300 px-4 py-2"
                         >
                           <WhatsappLogo className="w-5 h-5" />
